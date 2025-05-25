@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Status</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff5f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(rgb(56, 26, 7),rgb(240, 183, 136));
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .status-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .order-info {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .order-info p {
+      margin: 0.5rem 0;
+    }
+
+    .status-step {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #f06292;
+      margin-right: 10px;
+    }
+
+    .line {
+      height: 2px;
+      background-color: #f06292;
+      flex: 1;
+      margin-left: 14px;
+    }
+
+    .step-label {
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ca9737;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Order Status</h1>
+    <p>Track your cake order in real-time</p>
+  </header>
+
+  <main class="status-container">
+    <div class="order-info">
+      <p><strong>Order ID:</strong> No available</p>
+      <p><strong>Customer:</strong> No available</p>
+      <p><strong>Date:</strong> May 16, 2025</p>
+    </div>
+
+    <div class="status-step">
+      <div class="circle"></div>
+      <div class="step-label">Order Placed</div>
+    </div>
+
+    <div class="status-step">
+      <div class="circle"></div>
+      <div class="step-label">Preparing Ingredients</div>
+    </div>
+
+    <div class="status-step">
+      <div class="circle"></div>
+      <div class="step-label">Baking in Progress</div>
+    </div>
+
+    <div class="status-step">
+      <div class="circle" style="background-color: #ccc;"></div>
+      <div class="step-label">Out for Delivery</div>
+    </div>
+
+    <div class="status-step">
+      <div class="circle" style="background-color: #ccc;"></div>
+      <div class="step-label">Delivered</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Bakery. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
